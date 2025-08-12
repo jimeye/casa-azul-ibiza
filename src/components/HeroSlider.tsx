@@ -32,8 +32,8 @@ export default function HeroSlider() {
 
       
               <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="border-2 border-[#020b46] bg-black bg-opacity-50 px-8 py-8 text-center text-[#f9f7f2] max-w-6xl mx-8">
-          <h2 className="text-6xl md:text-6xl mb-6 text-[#f9f7f2] uppercase whitespace-nowrap" style={{ textShadow: '0 0 10px #020b46, 0 0 20px #020b46, 0 0 30px #020b46, 2px 2px 0 #020b46' }}>Casa Azul Ibiza</h2>
+          <div className="border-2 border-[#020b46] bg-black bg-opacity-50 px-4 md:px-8 py-6 md:py-8 text-center text-[#f9f7f2] max-w-6xl mx-4 md:mx-8">
+          <h2 className="text-4xl md:text-6xl mb-6 text-[#f9f7f2] uppercase whitespace-nowrap" style={{ textShadow: '0 0 10px #020b46, 0 0 20px #020b46, 0 0 30px #020b46, 2px 2px 0 #020b46' }}>Casa Azul Ibiza</h2>
           <p className="text-lg text-[#f9f7f2] font-light uppercase mb-8">
             Réservez votre séjour à partir de 120 €
           </p>

@@ -8,11 +8,11 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   const navItems = [
-    { name: 'HOME', href: '#home' },
-    { name: 'RESERVER', href: '#reserver' },
-    { name: 'CHAMBRES', href: '#chambres' },
-    { name: 'IBIZA BON PLAN', href: '#ibiza-bon-plan' },
-    { name: 'CONTACT', href: '#contact' }
+    { name: 'HOME', href: '#home', description: 'Page d\'accueil' },
+    { name: 'RESERVER', href: '#reserver', description: 'Réserver votre séjour' },
+    { name: 'CHAMBRES', href: '#chambres', description: 'Découvrir nos chambres' },
+    { name: 'IBIZA BON PLAN', href: '#ibiza-bon-plan', description: 'Conseils et adresses' },
+    { name: 'CONTACT', href: '#contact', description: 'Nous contacter' }
   ]
 
   useEffect(() => {
@@ -86,12 +86,12 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-black bg-opacity-30 backdrop-blur-sm rounded-b-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-transparent rounded-b-lg">
             {navItems.map((item) => (
                               <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-[#f9f7f2] hover:text-white transition-colors duration-200 font-medium text-sm text-left"
+                  className="block px-3 py-2 text-[#f9f7f2] hover:text-white transition-colors duration-200 font-medium text-sm text-right"
                   style={{ textShadow: '1px 1px 0 #020b46, -1px -1px 0 #020b46, 1px -1px 0 #020b46, -1px 1px 0 #020b46' }}
                   onClick={() => setIsOpen(false)}
                 >
