@@ -1,6 +1,6 @@
 "use client"
 
-import { MapPin, Clock, Star, Heart, Coffee, Utensils, Music, Beach } from 'lucide-react'
+import { MapPin, Clock, Star, Heart, Coffee, Utensils, Music, Waves } from 'lucide-react'
 
 export default function IbizaBonPlanPage() {
   const recommendations = [
@@ -33,7 +33,7 @@ export default function IbizaBonPlanPage() {
     },
     {
       category: "Plages",
-      icon: <Beach className="w-6 h-6" />,
+      icon: <Waves className="w-6 h-6" />,
       items: [
         {
           name: "Cala Salada",
